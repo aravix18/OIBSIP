@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Member Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 50px 20px; }
+        .dashboard-box { max-width: 500px; margin: 0 auto; background: white; padding: 30px; border: 1px solid #cccccc; border-radius: 5px; text-align: center; }
+        h1 { color: #b22222; font-size: 1.6rem; margin-bottom: 15px; }
+        .welcome-msg { font-size: 1.1rem; margin-bottom: 20px; color: #555555; }
+        .content-area { border-top: 2px solid #b22222; padding-top: 15px; text-align: left; font-size: 0.95rem; line-height: 1.5; color: #333333; }
+        .logout-link { display: inline-block; margin-top: 25px; padding: 8px 15px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 4px; font-size: 0.9rem; }
+        .logout-link:hover { background-color: #5a6268; }
+    </style>
+</head>
+<body>
+    <div class="dashboard-box">
+        <h1>Welcome, {{ current_user }}!</h1>
+        <p class="welcome-msg">You have successfully accessed the secure portal.</p>
+        <div class="content-area">
+            <p><strong>Member Status:</strong> Active Verified Email Account</p>
+        </div>
+        <a href="/logout" class="logout-link">Log Out</a>
+    </div>
+</body>
+</html>

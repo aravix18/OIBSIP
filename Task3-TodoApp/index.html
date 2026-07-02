@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>My Movie Watchlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <h1>Tamil Cinema Watchlist Planner</h1>
+        
+        <div class="add-box">
+            <input type="text" id="movie-input" placeholder="Enter movie name here...">
+            <button onclick="addMovie()">Add Movie</button>
+        </div>
+
+        <div class="column-section">
+            <h2>Movies to Watch</h2>
+            <ul id="pending-list"></ul>
+        </div>
+
+        <div class="column-section">
+            <h2>Watched Movies</h2>
+            <ul id="completed-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

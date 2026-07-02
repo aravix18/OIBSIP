@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>Club Registration</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 50px 20px; }
+        .reg-box { max-width: 380px; margin: 0 auto; background: white; padding: 25px; border: 1px solid #cccccc; border-radius: 5px; text-align: center; }
+        h2 { color: #b22222; margin-bottom: 20px; font-size: 1.4rem; }
+        input[type="email"], input[type="password"], input[type="text"] { width: 100%; padding: 10px; margin-bottom: 12px; border: 1px solid #999999; border-radius: 4px; box-sizing: border-box; }
+        .show-pass-container { text-align: left; margin-bottom: 15px; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; }
+        button { width: 100%; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer; font-weight: bold; }
+        button:hover { background-color: #218838; }
+        p { margin-top: 15px; font-size: 0.9rem; }
+        a { color: #b22222; text-decoration: none; }
+        .alert-banner { display: block; margin-bottom: 15px; padding: 8px; background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; border-radius: 4px; font-size: 0.85rem; }
+        .indicator-box { margin-bottom: 12px; text-align: left; font-size: 0.85rem; font-weight: bold; }
+        .weak-label { color: #dc3545; }
+        .strong-label { color: #28a745; }
+    </style>
+</head>
+<body>
+    <div class="reg-box">
+        <h2>Register New Account</h2>
+        
+        {% if alert %}
+        <div class="alert-banner">{{ alert }}</div>
+        {% endif %}
+
+        <form action="/register" method="POST">
+            <input type="email" name="email" placeholder="Email Address (e.g., user@gmail.com)" required>
+            <input type="password" id="pass-field" name="password" placeholder="Password" oninput="checkStrength()" required>
+            
+            <div class="show-pass-container">
+                <input type="checkbox" id="toggle-reg-pass" onclick="togglePassVisibility('pass-field')">
+                <label for="toggle-reg-pass">Show Password</label>
+            </div>
+
+            <div class="indicator-box">
+                Password Strength: <span id="strength-output" class="weak-label">Weak (Needs text, number, & symbol)</span>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+        <p>Already a member? <a href="/login">Login here</a></p>
+    </div>
+
+    <script>
+        function checkStrength() {
+            var val = document.getElementById("pass-field").value;
+            var out = document.getElementById("strength-output");
+            
+            var hasLetter = /[a-zA-Z]/.test(val);
+            var hasNumber = /[0-9]/.test(val);
+            var hasSymbol = /[!@#$%^&*(),.?":{}|<>_\-]/.test(val);
+            
+            if (hasLetter && hasNumber && hasSymbol && val.length >= 6) {
+                out.innerText = "Strong";
+                out.className = "strong-label";
+            } else {
+                out.innerText = "Weak (Needs text, number, & symbol)";
+                out.className = "weak-label";
+            }
+        }
+
+        function togglePassVisibility(fieldId) {
+            var box = document.getElementById(fieldId);
+            if (box.type === "password") {
+                box.type = "text";
+            } else {
+                box.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>
