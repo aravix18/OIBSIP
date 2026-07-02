@@ -1,16 +1,24 @@
 # 🎞️ Task 3: Cinema Watchlist Web App
 
-## 📌 Project Overview
+## 🚀 Live Demo
 
-This project is a movie watchlist web application that allows users to manage pending and completed movies efficiently.
+Access the application here:
+
+→ [Launch Watchlist Application](https://aravix18.github.io/OIBSIP/Task3-Watchlist/)
+
+---
+
+## 📁 Project Overview
+
+An interactive web application to manage movie watchlists with dynamic UI updates and task organization.
 
 ## 🚀 Features
 
-* Add new movies to the list
-* Mark movies as completed
-* Delete movies from the list
-* Dynamic UI updates using JavaScript
-* Split layout for better organization
+* Add movies to list
+* Mark as completed
+* Delete entries
+* Dynamic DOM updates
+* Split layout design
 
 ## 🛠️ Technologies Used
 
@@ -18,13 +26,6 @@ This project is a movie watchlist web application that allows users to manage pe
 * CSS3
 * JavaScript
 
-## 📚 What I Learned
-
-* DOM manipulation
-* Event handling in JavaScript
-* Managing dynamic lists
-* Building interactive user interfaces
-
 ## 📌 Conclusion
 
-This project enhanced my frontend development skills by building a fully interactive web application.
+This project enhanced my skills in building interactive and dynamic frontend applications.
