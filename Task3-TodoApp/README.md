@@ -4,7 +4,7 @@
 
 Access the application here:
 
-→ [Launch Watchlist Application](https://aravix18.github.io/OIBSIP/Task3-Watchlist/)
+→ [Launch Watchlist Application](https://aravix18.github.io/OIBSIP/Task3-TodoApp/)
 
 ---
 
