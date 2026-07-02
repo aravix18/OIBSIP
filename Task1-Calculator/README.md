@@ -1,16 +1,24 @@
 # 🧮 Task 1: Basic Calculator UI
 
-## 📌 Project Overview
+## 🚀 Live Demo
 
-This project is a basic arithmetic calculator developed as part of the OIBSIP internship. It provides a clean and responsive interface for performing standard mathematical operations.
+You can open and use the calculator directly:
+
+→ [Launch Calculator Web App](./index.html)
+
+---
+
+## 📁 Project Overview
+
+A responsive arithmetic calculator designed with a clean UI and grid-based layout. It performs standard mathematical operations with real-time input handling.
 
 ## 🚀 Features
 
-* Addition, subtraction, multiplication, and division
-* Interactive button-based input system
+* Basic arithmetic operations
+* Interactive button input
 * Instant result calculation
 * Clear/reset functionality
-* Responsive layout
+* Responsive design
 
 ## 🛠️ Technologies Used
 
@@ -18,13 +26,6 @@ This project is a basic arithmetic calculator developed as part of the OIBSIP in
 * CSS3
 * JavaScript (ES6)
 
-## 📚 What I Learned
-
-* Handling user input using JavaScript
-* Implementing arithmetic logic
-* Designing grid-based layouts using CSS
-* Improving UI responsiveness
-
 ## 📌 Conclusion
 
-This project strengthened my understanding of JavaScript logic and UI structuring while building a functional web application.
+This project helped strengthen my understanding of JavaScript logic and UI structuring.
