@@ -4,7 +4,7 @@
 
 View the tribute page here:
 
-→ [Launch Tribute Page Layout](https://aravix18.github.io/OIBSIP/Task2-Tribute/)
+→ [Launch Tribute Page Layout](https://aravix18.github.io/OIBSIP/Task2-TributePage/)
 
 ---
 
