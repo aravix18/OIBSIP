@@ -4,7 +4,7 @@
 
 You can open and use the calculator directly:
 
-→ [Launch Calculator Web App](./index.html)
+→ [Launch Calculator Web App](https://aravix18.github.io/OIBSIP/Task1-Calculator/)
 
 ---
 
