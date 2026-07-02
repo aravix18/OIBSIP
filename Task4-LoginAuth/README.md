@@ -1,53 +1,52 @@
 # 🔐 Task 4: Login Authentication Portal
 
-## 📌 Project Overview
+## 🚀 Live Demo
 
-This project is a login authentication system built using Flask. It validates user credentials, checks password strength, and manages user sessions.
+This project runs locally. Follow the steps below to launch:
+
+→ Run the Flask server and open: http://127.0.0.1:5000/
+
+---
+
+## 📁 Project Overview
+
+A Flask-based authentication system that validates user credentials, checks password strength, and manages user sessions.
 
 ## 🚀 Features
 
-* Email validation (e.g., @gmail.com format)
-* Password strength checker (Weak/Strong)
+* Email validation
+* Password strength checker
 * Show/Hide password toggle
-* User registration system
+* User registration
 * Session handling
-* Success and error feedback messages
 
 ## 🛠️ Technologies Used
 
 * Python
 * Flask
-* Jinja2 Templates
+* Jinja2
 * HTML5
 * CSS3
 * JavaScript
 
-## ⚙️ How to Run Locally
+## ⚙️ How to Run
 
-1. Open terminal in the project folder
-2. Install Flask:
+1. Install Flask:
 
    ```
    pip install flask
    ```
-3. Run the app:
+2. Run the app:
 
    ```
    python app.py
    ```
-4. Open browser and go to:
+3. Open browser:
 
    ```
    http://127.0.0.1:5000/
    ```
 
-## 📚 What I Learned
-
-* Backend development using Flask
-* Form validation techniques
-* Session management
-* Integrating frontend with backend
-
 ## 📌 Conclusion
 
-This project provided hands-on experience in building a secure authentication system with both frontend and backend integration.
+This project provided hands-on experience in building a secure full-stack authentication system.
